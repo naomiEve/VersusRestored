@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gamemode gamestyle="Versus" leveltype="OneFlagCTF" menusortpriority="1" lockedintrial="true" username="TTRS:GameType.OneFlagCTF=One Flag CTF" shortusername="" tooltip="TTRS:GameType.OneFlagCTF.Tooltip=Bring the white flag to your opponent's base.">
+  <customizations>
+    <cvar name="gam_ctMaxPlayers" customizelevel="always" default="16"/>
+    <cvar name="gam_ctPrivateSlots" customizelevel="always" default="0"/>
+    <cvar name="gam_ctMinPlayers" customizelevel="always" default="2"/>
+    <cvar name="gam_ctFragsLimit" customizelevel="never" default="20"/>
+    <cvar name="gam_ctGoalsLimit" customizelevel="always" default="5"/>
+    <cvar name="gam_ctTimeLimit" customizelevel="always" default="10"/>
+    <cvar name="gam_ctRoundLimit" customizelevel="never" default="10"/>
+    <cvar name="gam_gdDifficulty" customizelevel="never" default="Normal"/>
+    <cvar name="gam_bCustomizedDifficulty" customizelevel="always" default="false"/>
+    <cvar name="gam_bExtraMPEnemies" customizelevel="never" default="true"/>    
+    <cvar name="gam_iEnemyMultiplier" customizelevel="always" default="-1"/>
+    <cvar name="gam_iEnemyMultiplierPerPlayer" customizelevel="never" default="-1"/>
+    <cvar name="gam_bBalanceMultipliedEnemies" customizelevel="never" default="true"/>    
+    <cvar name="gam_bWeaponsStay" customizelevel="never" default="true"/>
+    <cvar name="gam_bAmmoStays" customizelevel="never" default="true"/>
+    <cvar name="gam_bHealthStays" customizelevel="never" default="true"/>
+    <cvar name="gam_bArmorStays" customizelevel="never" default="true"/>
+    <cvar name="gam_bPowerupsStay" customizelevel="never" default="true"/>
+    <cvar name="gam_iRespawnCredits" customizelevel="never" default="-1"/>
+    <cvar name="gam_bRespawnCreditsPerPlayer" customizelevel="never" default="false"/>
+    <cvar name="gam_iRespawnTimePenaltyIncrease" customizelevel="never" default="0"/>
+    <cvar name="gam_iMaxRespawnTimePenalty" customizelevel="never" default="0"/>
+    <cvar name="gam_bFriendlyFire" customizelevel="never" default="false"/>
+    <cvar name="gam_iExtraEnemyStrength" customizelevel="never" default="0"/>
+    <cvar name="gam_iExtraEnemyStrengthPerPlayer" customizelevel="never" default="30"/>
+    <cvar name="gam_iExtraEnemyDamagePerPlayer" customizelevel="never" default="0"/>
+    <cvar name="gam_bRespawnInPlace" customizelevel="never" default="false"/>
+    <cvar name="gam_iInvulnerableAfterSpawning" customizelevel="never" default="0"/>
+    <cvar name="gam_bAllowHealthItems" customizelevel="allowed" default="true"/>
+    <cvar name="gam_bAllowArmorItems" customizelevel="allowed" default="true"/>
+    <cvar name="gam_bAllowPowerupItems" customizelevel="never" default="true"/>
+    <cvar name="gam_bAllowSeriousBombItems" customizelevel="never" default="true"/>
+    <cvar name="gam_bInfiniteAmmo" customizelevel="allowed" default="false"/>
+    <cvar name="gam_bForceVRTrackpadLocomotion" customizelevel="never" default="false"/>
+    <cvar name="gam_bVRFriendlyMode" customizelevel="always" default="false"/>
+    <cvar name="gam_bFlatFriendlyMode" customizelevel="always" default="false"/>
+    <cvar name="gam_bAllowJoinInProgress" customizelevel="never" default="true"/>
+    <cvar name="gam_bRankedMatch" customizelevel="externallycontrolled" default="false"/>
+    <cvar name="gam_bAutoCycleMaps" customizelevel="always" default="true"/>
+  </customizations>
+  <gamerules>
+    <gamerule name="gar_bAllowsSP" value="false"/>
+    <gamerule name="gar_bAllowsMP" value="true"/>
+    <gamerule name="gar_bAllowSaving" value="false"/>
+    <gamerule name="gar_ctMaxPlayersTop" value="16"/>
+    <gamerule name="gar_ctMaxPlayersTop" platform="NX" value="16"/>
+    <gamerule name="gar_ctMinPlayersBottom" value="1"/>
+    <gamerule name="gar_strSpawnFlags" value="Deathmatch"/>
+    <gamerule name="gar_bShowMPInterface" value="true"/>
+    <gamerule name="gar_bCoopStyleItems" value="false"/>
+    <gamerule name="gar_bItemsAddToScore" value="false"/>
+    <gamerule name="gar_iSecretScoreOverride" value="-1"/>
+    <gamerule name="gar_bApplyImpactFromDamage" value="false"/>
+    <gamerule name="gar_bApplyFallingDamage" value="true"/>
+    <gamerule name="gar_bDMStyleRespawning" value="true"/>
+    <gamerule name="gar_bUsesFragLimit" value="false"/>
+    <gamerule name="gar_bUsesGoalLimit" value="false"/>
+    <gamerule name="gar_bUsesTimeLimit" value="true"/>
+    <gamerule name="gar_bLivesCounted" value="false"/>
+    <gamerule name="gar_bAllowTreasureItems" value="false"/>
+    <gamerule name="gar_iScoreSortIndex" value="3"/>
+    <gamerule name="gar_iGoalsSortIndex" value="-1"/>
+    <gamerule name="gar_iFragsSortIndex" value="-1"/>
+    <gamerule name="gar_iTimeSortIndex" value="-1"/>
+    <gamerule name="gar_bNetricsaEnabled" value="false"/>
+    <gamerule name="gar_bVersusMode" value="true"/>
+    <gamerule name="gar_iSeriousDamageScore" value="0"/>
+    <gamerule name="gar_fPlayerVsPlayerDamageMultiplier" value="1.0"/>
+    <gamerule name="gar_bApplyDifficultyPlayerDamageMultiplier" value="false"/>
+    <gamerule name="gar_fSeriousDamageMultiplier" value="4.0"/>
+    <gamerule name="gar_bDropItemsWhenKilled" value="true"/>
+    <gamerule name="gar_fMeleeWeaponSpeedMultiplier" value="1.2"/>
+    <gamerule name="gar_fSelfHitRangeDamageMultiplier" value="0.0"/>
+    <gamerule name="gar_fShotgunBulletRadius" value="0.1"/>
+    <gamerule name="gar_fMachineGunBulletRadius" value="0.5"/>
+    <gamerule name="gar_iChainsawDamagePerSec" value="10"/>
+    <gamerule name="gar_bPowerupDurationAsInDM" value="true"/>
+    <gamerule name="gar_bIncludesEnemies" value="false"/>
+    <gamerule name="gar_bDisplayKillScores" value="false"/>
+    <gamerule name="gar_iKilledByPlayerScore" value="0"/>
+    <gamerule name="gar_iKilledByMonsterScore" value="0"/>
+    <gamerule name="gar_iRespawnTimePenalty" value="1"/>
+    <gamerule name="gar_iIKilledPlayerScore" value="0"/>
+    <gamerule name="gar_iSavedGameScore" value="0"/>
+    <gamerule name="gar_bUseDMEntityParms" value="false"/>
+    <gamerule name="gar_bTeams" value="true"/>
+    <gamerule name="gar_bSmallPlayerList" value="false"/>
+    <gamerule name="gar_strPlayersTableColumns" value="Ordinal 0.05 | VoiceStatus 0.05 | AvatarImage 0.05 | PlayerName -1 | Frags 0.12 | Deaths 0.12 | Score 0.12 | Ping 0.1 |"/>
+    <gamerule name="gar_bAutoRespawn" value="true"/>
+    <gamerule name="gar_bForceRespawnInPlaceWhenKilledByEnemy" value="false"/>
+    <gamerule name="gar_bLastStandingMode" value="false"/>
+    <gamerule name="gar_bUsesLeaderboards" value="true"/>
+    <gamerule name="gar_bLeaderboardPerLevel" value="true"/>
+    <gamerule name="gar_iLTKMinDuration" value="-1"/>
+    <gamerule name="gar_iLTKMaxDuration" value="-1"/>
+    <gamerule name="gar_iLTKMinPause" value="-1"/>
+    <gamerule name="gar_iLTKMaxPause" value="-1"/>
+    <gamerule name="gar_iNewLTKScore" value="-1"/>
+    <gamerule name="gar_iInitialLTKCount" value="-1"/>
+    <gamerule name="gar_strServerListColumns" value="Server -1 L | Level 0.3 L | Difficulty 0.2 C | Players 0.1 C | Ping 0.1 C |"/>
+    <gamerule name="gar_bInMenuWarmup" value="false"/>
+    <gamerule name="gar_ctMaxSplitScreenUsers" platform="Xenon" value="2"/>
+    <gamerule name="gar_ctMaxSplitScreenUsers" platform="Cell" value="2"/>
+  </gamerules>
+  <thumbnail filename="TFNM:Content/SeriousSamFusion/Databases/GameModes/CaptureTheFlag.tex" />
+  <rules description="TTRS:GameType.OneFlagCTF.Rules=Take the white flag and bring it into your opponent's base to score a point.\n\nHelp your team reaching the goal limit first, or be in the better ranked team when the time limit runs out to win the match." />
+</gamemode>
